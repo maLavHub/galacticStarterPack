@@ -1,0 +1,351 @@
+                                                                    /**************POUR TOUTE LA PAGE****************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+                                /***POUR TOUTE LA PAGE - sections body, page, main***/
+body{
+    background: url("images/background-fixe.jpg");
+    background-color: black;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: montserrat;
+}
+
+.page{
+    margin: 5%;
+    background-color: #c4c3c9;
+    border-radius: 30px;
+}
+main{
+    color: #10242E;
+}
+
+                                /***POUR TOUTE LA PAGE - fonctionnalité d'ajout de panier***/
+/*la div qui englobe tout ce qui permet de rajouter les produits au panier*/
+.shop{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+/*pour le bouton -*/
+.minus{
+    font-size: 20px;
+}
+.minus:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/*pour le bouton - du vaisseau*/
+.minus-main{
+    font-size: 30px;
+}
+.minus-main:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/*pour le bouton +*/
+.add{
+    font-size: 20px;
+
+}
+.add:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/*pour le bouton + du vaisseau*/
+.add-main{
+    font-size: 30px;
+
+}
+.add-main:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+
+
+                                                                                /**************MENU****************/
+
+
+
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #10242E;
+    color: #c4c3c9;
+    height: 70px;
+    z-index: +1;
+    box-shadow: 0 0 10px black;
+}
+                                /***MENU - accueil et panier***/
+.liens{
+    width: 30%;
+}
+
+.liens>nav{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+}
+
+/*Les liens accueil et panier*/
+li{
+    display: inline;
+    justify-content: space-around;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4c3c9;
+    width: 50%;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    font-family: montserrat;
+}
+
+a{
+    text-decoration: none;
+    color: #10242E;
+    font-size: 20px;
+}
+
+#panier{
+    background-color: #10242E;
+}
+
+#panier:hover{
+    background-color: #c4c3c9;
+    opacity: 0.3;
+    cursor: pointer;
+}
+#panier:hover #page-shop{
+    color:#10242E;
+    text-decoration: none;
+}
+
+#page-shop{
+    color: #c4c3c9;
+}
+
+.liens a:hover{
+    text-decoration: underline;
+}
+a:active{
+    font-weight: bold;
+}
+                                /***MENU - titre du site***/
+h1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+                                /***MENU - logo***/
+.logo{
+    display: flex;
+    width: 15%;
+    font-size: 45px;
+    color: #c4c3c9;
+}
+.logo i:hover{
+    color: white;
+    transition: all 0.5s;
+    text-shadow: 0 0 30px rgb(68, 0, 255);
+
+}
+
+
+
+
+
+                                                            /**************PHRASE D'ACCROCHE DU SITE****************/
+
+
+
+
+
+.presentation{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #10242E;
+    border-radius: 30px;
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+    padding: 30px;
+}
+.presentation>p{
+    color: #c4c3c9;
+    font-size: 20px;
+}
+
+em{
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+
+
+
+                                                                        /**************PRODUIT PHARE****************/
+
+
+
+
+
+
+/*div contenant tout pour le vaisseau : 
+l'image, la description, le prix et 
+l'ajout de panier pour le vaisseau*/
+.main-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    
+}
+/*div contenant l'image, l'overlay et la description du vaisseau*/
+.global-description{
+    position: relative;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+}
+                                /***PRODUIT PHARE - image du vaisseau***/
+/*div de l'image du vaisseau*/
+.main-product-image{
+    display: block;
+    width: 95%;
+    border-radius:30px;
+}
+                                /***PRODUIT PHARE - nom de l'article et son prix***/
+                                /***PRODUIT PHARE - fonction d'ajout dans le panier***/
+#main-product-number{
+    font-size: 30px;
+    margin-left: 3px;
+    margin-top: 8px;
+}
+                                /***PRODUIT PHARE - texte de l'overlay***/
+.description>h3{
+    margin-bottom: 50px;
+}
+.description>p{
+    margin-bottom: 25px;
+}
+/*texte de description du vaisseau qui doit apparaître au survol de l'image*/
+  .description{
+    color: #c4c3c9;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* déco du texte de description du vaisseau qui doit apparaître au survol de l'image*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 95%;
+    height: 96.98%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 30px;
+    background-color: #1c1c1dad;
+  }
+
+.global-description:hover .overlay{
+    opacity: 1;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
+
+
+                                                    /**************GRILLE DES 6 PLUS PETITS PRODUITS****************/
+
+
+
+
+
+/*pour la grille des petits produits*/
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+
+.little-products {
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+                                /***GRILLE DES 6 PLUS PETITS PRODUITS - images***/
+.img-item {
+    display: block;
+    width: 190px;
+    height: 125px;
+    border-radius: 15px;
+}
+                                /***GRILLE DES 6 PLUS PETITS PRODUITS - noms des articles et prix***/
+.description-littles{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
+
+
+                                                                             /**************FOOTER****************/
+
+
+
+
+
+.footer{
+    color:#c4c3c9;
+    background-color: #10242E;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

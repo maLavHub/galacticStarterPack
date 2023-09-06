@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le-guide-du-voyageur-intergalactique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href ="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div class="page">
+
+
+
+
+
+<!--menu-->
+
+
+
+
+
+        <header>
+            <div class="menu">
+                <div class="liens">
+                    <nav>
+                        <button><li><a href="index.html">Accueil</a></li></button>  
+                        <button id="panier"><li><a href="../Testing Anthony/panier.html" id="page-shop">Panier</a></li></button>
+                    </nav>
+                </div>
+                <h1>Le guide du voyageur intergalactique</h1>
+                <a href="index.html" class="logo"><i class="fa-solid fa-meteor"></i></a> <!--pointe vers le lien où se situe les images, ici du logo-->
+            </div>
+        </header>
+
+
+        <main>
+
+
+
+
+<!--phrase d'accroche du site-->
+
+
+
+
+
+            <div class="presentation">
+                <p>"Envie de prendre le large et sillonner <em>l'espace</em>?</p>
+                <p>Partez équipés.</p>
+                <p>Des <em>exclus</em>, des <em>classiques</em>, scrollez pour créer le <em>starter pack</em> de vos rêves."</p>
+            </div>
+
+
+
+
+
+<!--produit phare-->
+
+
+
+
+
+            <div class="main-product">
+                <div class="global-description">
+                    <img src="images/vaisseau.jpg" class="main-product-image"/>
+                        <div class="overlay">
+                            <div class="description">
+                                <h2>#EXCLU!!!#</h2>
+                                <p><em>Caractéristiques principales :</em> coque 
+                                en alliage ultra-résistant, propulsion supraluminique, 
+                                deux kilomètres d'envergure</p>
+                                <p><em>Armement :</em> canons ioniques, turbolasers, torpilles à plasma 
+                                modèle Nova-X (vu sur Andor)</p>
+                                <p><em>Système embarqué :</em> quartier de commandement, générateurs de 
+                                boucliers déflecteurs, système de communication "HyperComm".</p>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Destroyer stellaire : </p>
+                            <div class="price">999998.99</div>€
+                        </div>
+                </div>
+                <div class="shop">
+                    <div class="quantity">
+                        <i class="fa-solid fa-plus add add-main"></i><!--pointe vers le plus-->
+                        <div class="product-number" id="main-product-number">0</div><!--indique le nombre de vaisseaux mis dans le panier-->
+                        <i class="fa-solid fa-minus minus minus-main"></i></i> <!--pointe vers le moins-->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+<!--La grille des 6 plus petits produits-->
+
+
+
+
+
+            <div class="grid">
+
+                <!--armes-->
+                <div class="little-products">
+                    <div class="global-description-littles">
+                        <img src="images/arme.jpg" class="img-item"/>
+                            <div class="description-littles">
+                                <p>IonCannon : </p>
+                                <div class="price">499.99</div>€
+                            </div>
+                    </div>          
+                    <div class="shop">
+                        <div class="quantity">
+                            <i class="fa-solid fa-plus add"></i>
+                            <div class="product-number">0</div>
+                            <i class="fa-solid fa-minus minus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--camping-->
+                <div class="little-products">
+                    <div class="global-description-littles">
+                        <img src="images/tente.jpg" class="img-item"/>
+                            <div class="description-littles">
+                                <p>LunarLodge : </p>
+                                <div class="price">499.99</div>€
+                            </div>
+                    </div>
+                    <div class="shop">
+                        <div class="quantity">
+                            <i class="fa-solid fa-plus add"></i>
+                            <div class="product-number">0</div>
+                            <i class="fa-solid fa-minus minus"></i> 
+                        </div>
+                    </div>
+                </div>
+
+                <!--bouffe-->
+                <div class="little-products">
+                    <div class="global-description-littles">
+                        <img src="images/bouffe.jpg" class="img-item"/>
+                            <div class="description-littles">
+                                <p>AstroMeals : </p>
+                                <div class="price">9.99</div>€
+                            </div>
+                    </div>
+                    <div class="shop">
+                        <div class="quantity">
+                            <i class="fa-solid fa-plus add"></i>
+                            <div class="product-number">0</div>
+                            <i class="fa-solid fa-minus minus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--wc-->
+                <div class="little-products">
+                    <div class="global-description-littles">
+                        <img src="images/wc.jpg" class="img-item"/>
+                            <div class="description-littles">
+                                <p>StellarClean</p>
+                                <div class="price">299.99</div>€
+                            </div>
+                    </div>
+                    <div class="shop">
+                        <div class="quantity">
+                            <i class="fa-solid fa-plus add"></i>
+                            <div class="product-number">0</div>
+                            <i class="fa-solid fa-minus minus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--trousse de soin-->
+                <div class="little-products">
+                    <div class="global-description-littles">
+                        <img src="images/medical.png" class="img-item"/>
+                            <div class="description-littles">
+                                <p>Medikit Cosmos : </p>
+                                <div class="price">69.99</div>€
+                            </div>
+                    </div>
+                    <div class="shop">
+                        <div class="quantity">
+                            <i class="fa-solid fa-plus add"></i>
+                            <div class="product-number">0</div>
+                            <i class="fa-solid fa-minus minus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--trousse à outils-->
+                <div class="little-products">
+                    <div class="global-description-littles">
+                        <img src="images/outils.jpg" class="img-item"/>
+                            <div class="description-littles">
+                                <p>Galactic ToolBox : </p>
+                                <div class="price">69.99</div>€
+                            </div>
+                    </div>
+                    <div class="shop">
+                        <div class="quantity">
+                            <i class="fa-solid fa-plus add"></i>
+                            <div class="product-number">0</div>
+                            <i class="fa-solid fa-minus minus"></i>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+
+
+
+
+
+<!--total du panier-->
+
+
+
+
+
+            <div class="footer">
+                <div class="total">Total : <span id="addition"></span> €</div>
+            </div>
+        </main>
+    </div>
+
+    <!--Lien, vers le fichier .js-->
+    <script src="shop.js"></script>
+</body>
+</html>
